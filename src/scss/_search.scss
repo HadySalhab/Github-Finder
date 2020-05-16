@@ -1,0 +1,15 @@
+.search {
+	flex: 0 0 60%;
+	text-align: center;
+	&__field {
+		padding: 1rem;
+		width: 70%;
+		border-radius: 10px;
+		border: none;
+		transition: width 0.2s;
+		&:focus {
+			outline: none;
+			width: 75%;
+		}
+	}
+}

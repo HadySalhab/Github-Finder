@@ -1,0 +1,43 @@
+$color-black: #000;
+$color-white: #fff;
+$color-primary: #93cb52;
+$default-font-size: 1.6rem;
+
+// RESPONSIVE BREAKPOINTS
+
+$bp-lg: 75em; // normal 1200
+$bp-md: 48em; // tablet 768
+$bp-sm: 32em; // phone 500
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+a {
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background: linear-gradient(
+		302deg,
+		rgba(255, 34, 0, 0.577468487394958) 0%,
+		rgba(0, 0, 0, 0.4962359943977591) 60%
+	);
+	padding: 10rem 0;
+}
+
+.container {
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 0 2rem;
+	overflow: hidden;
+}

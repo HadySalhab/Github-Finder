@@ -1,0 +1,10 @@
+.navigation {
+	padding: 3rem 4rem;
+	background-color: rgba(0, 0, 0, 0.1);
+	display: flex;
+	align-items: center;
+
+	&__title {
+		font-size: 3rem;
+	}
+}
