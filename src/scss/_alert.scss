@@ -1,0 +1,19 @@
+.alert {
+	padding: 2rem 0.5rem;
+	text-align: center;
+
+	font-size: 2rem;
+
+	&-fail {
+		color: white;
+		background-color: #d9534f;
+	}
+	&-success {
+		color: white;
+		background-color: #5cb85c;
+	}
+	&-info {
+		color: white;
+		background-color: #5bc0de;
+	}
+}

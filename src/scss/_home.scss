@@ -1,0 +1,47 @@
+.results {
+	flex: 1;
+	display: flex;
+
+	&__users {
+		flex: 1;
+	}
+	&__list {
+		flex: 0 0 25%;
+		background-color: rgba(0, 0, 0, 0.1);
+		padding: 1.5rem 1rem;
+		display: flex;
+		flex-direction: column;
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+		padding: 1rem 1rem;
+		background-color: white;
+		border-radius: 0.5rem;
+		box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.1);
+		&:not(:last-child) {
+			margin-bottom: 1rem;
+		}
+		img {
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+		}
+		p {
+			margin-left: 2rem;
+			font-size: 2rem;
+		}
+		&:hover {
+			cursor: pointer;
+			background-color: rgba(236, 236, 236, 0.952);
+		}
+	}
+	&__pages {
+		margin-top: auto;
+		display: flex;
+		justify-content: space-between;
+		padding: 2rem 1rem;
+		align-items: center;
+		overflow: auto;
+	}
+}

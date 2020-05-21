@@ -12,7 +12,10 @@
 		<title>Vanilla Parcel Boilerplate</title>
 	</head>
 	<body>
+		<div class="container">
+
 		<div class="app">
+	
 			<nav class="navigation">
 				<h1 class="navigation__title">
 					<i class="fab fa-github" /> Github Finder
@@ -20,20 +23,60 @@
 				<form class="search">
 					<input
 						type="text"
-						class="search__field"
+						class="search__input"
 						placeholder="Search for github users"
 					/>
+					<button class="search__button">
+						<!-- <svg class="search__icon">
+								<use href="img/sprite.svg#icon-magnifying-glass"></use>
+						</svg> -->
+						<i class="fas fa-search search__icon fa-2x"></i>
+				</button>
 				</form>
 				<div class="following">
 					<div class="following__field">
-						<svg class="following__icon">
-							<use xlink:href="img/sprite.svg#icon-heart"></use>
-						</svg>
+						<!-- <svg class="following__icon">
+							<use href="./img/sprite.svg#icon-heart"></use>
+						</svg> -->
+						<i class="fas fa-heart fa-3x following__icon"></i>
+					</div>
+					<div class="following__user">
+			
 					</div>
 				</div>
 			</nav>
-		</div>
+			<div class="results">
+			
+				<div class="results__list">	
+					<div class="loadingspinner loadingspinner-users"></div>
+					<div class="results__users"></div>
+					<div class="results__pages"> 
+						 <!-- <button class="btn-inline ">
+							<svg class="search__icon">
+							<use href="./img/sprite.svg#icon-chevron-small-left"></use>
+					 </svg>
+							<span>Page 1</span>
+							</button> 
 
+						<button class="btn-inline btn-inline--right">
+							<span>Page 2</span>
+							<svg class="search__icon">
+									<use href="./img/sprite.svg#icon-chevron-small-right"></use>
+							</svg>
+							</button> -->
+        </div>
+				</div>
+				<div class="user">			
+					<div class="loadingspinner loadingspinner-user"></div>
+					<div class="user__profile">	</div>
+				
+
+		<div class="user__repos">
+
+			</div>
+		</div>		
+		</div>
+	</div>
 		<script src="../src/main.js"></script>
 	</body>
 </html>

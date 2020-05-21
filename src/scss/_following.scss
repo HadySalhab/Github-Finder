@@ -1,8 +1,31 @@
 .following {
 	margin-left: auto;
+	position: relative;
 	&__icon {
-		height: 3rem;
-		width: 3rem;
-		fill: brown;
+		color: brown;
+	}
+	&__field {
+		padding: 3rem 4rem;
+		transition: all 0.5s;
+		&:hover {
+			background-color: rgba(209, 209, 209, 0.5);
+			cursor: pointer;
+		}
+	}
+	&__user {
+		position: absolute;
+		height: 2rem;
+		width: 25rem;
+		right: 0%;
+		border-top: 1px solid white;
+		background-color: rgba(0, 0, 0, 0.1);
+		visibility: hidden;
+		opacity: 0;
+		transition: all 0.5s 0.2s;
+	}
+	&__user:hover,
+	&__field:hover + &__user {
+		visibility: visible;
+		opacity: 1;
 	}
 }

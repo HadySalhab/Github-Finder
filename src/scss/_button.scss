@@ -1,0 +1,61 @@
+.btn-inline {
+	color: brown;
+	font-size: 1.2rem;
+	border: none;
+	background-color: white;
+	padding: 0.8rem 1.2rem;
+	border-radius: 10rem;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+
+	svg {
+		height: 1.5rem;
+		width: 1.5rem;
+		fill: currentColor;
+		margin: 0 0.2rem;
+	}
+	span {
+		margin: 0 0.4rem;
+	}
+
+	&:hover {
+		color: brown;
+	}
+	&:focus {
+		outline: none;
+	}
+	&--right {
+		margin-left: auto;
+	}
+}
+.btn {
+	display: inline-block;
+	text-align: center;
+	padding: 1rem 1rem;
+	border-radius: 1rem;
+	color: white;
+	font-size: 1.5rem;
+	margin-top: 0.5rem;
+
+	&:hover {
+		transform: translateY(-1.5px);
+		box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+	}
+	&:active,
+	&:focus {
+		outline: none;
+		transform: translateY(-1px);
+		box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+	}
+
+	&:first-child {
+		margin-right: 1rem;
+	}
+	&--red {
+		background-color: rgb(214, 115, 115);
+	}
+	&--blue {
+		background-color: rgb(68, 162, 240);
+	}
+}

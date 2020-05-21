@@ -1,0 +1,16 @@
+.badge {
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	&--red {
+		background-color: rgb(231, 190, 190);
+	}
+	&--grey {
+		background-color: rgb(199, 199, 199);
+	}
+	&--green {
+		background-color: rgb(152, 216, 123);
+	}
+	&--blue {
+		background-color: rgb(114, 195, 219);
+	}
+}
