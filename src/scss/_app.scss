@@ -3,13 +3,11 @@
 	width: 60%;
 }
 .app {
-	height: 115vh;
-
 	background-color: $color-white;
-
 	border-radius: 0.5rem;
 	display: flex;
 	flex-direction: column;
+	min-height: 90rem;
 }
 
 .loadingspinner {

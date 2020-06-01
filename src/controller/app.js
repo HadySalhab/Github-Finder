@@ -39,18 +39,25 @@ export default class App {
 	//on userItem clicked
 	async onUserClicked(name) {
 		if (
-			this.state.currentUser !== null &&
-			this.state.currentUser.login === name
+			(this.state.currentUser !== null &&
+				this.state.currentUser.login === name) ||
+			this.state.loading === true
 		) {
 			return;
 		}
 
 		this.ui.clearProfile();
 		this.ui.clearRepos();
+		this.setState({
+			loading: true,
+		});
 		this.ui.renderUserLoading();
 		const { profile, repos } = await this.github.getUser(name);
 		this.setState({
 			currentUser: profile,
+		});
+		this.setState({
+			loading: false,
 		});
 
 		//if saved (render unfollow btn otherwise render follow)
